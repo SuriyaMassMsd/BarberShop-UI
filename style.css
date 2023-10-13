@@ -1,3 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800;900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.hov{
+    @apply hover:underline underline-offset-8 decoration-2 decoration-black cursor-pointer hover:text-pink-600;
+}
+
+.font-head{
+    font-family: Cinzel, serif;
+    font-size: 28px;
+    font-weight: 400;
+    color:  rgb(193, 110, 110);
+}
+
+.book{
+    font-family: 'Montserrat', sans-serif;
+    top: 85%;
+    left: 40%;
+}
+
+.he{
+    position: absolute;
+    top: 65%;
+    font-size: 55px;
+    color:  white;
+    cursor: pointer;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+.color{
+    color: #817655;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.font1{
+    font-family: 'Montserrat', sans-serif;
+    
+}

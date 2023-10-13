@@ -5,7 +5,14 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily:{
+        Logofont:[" Sacramento, cursive;"
+        ],
+        font2: ["Cinzel, serif"]
+      },
+     
+    },
   },
   plugins: [],
 }
