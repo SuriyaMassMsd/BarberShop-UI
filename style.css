@@ -8,7 +8,7 @@
 
 
 .hov{
-    @apply hover:underline underline-offset-8 decoration-2 decoration-black cursor-pointer hover:text-pink-600;
+    @apply hover:underline underline-offset-8 decoration-2 decoration-black cursor-pointer hover:text-white;
 }
 
 .font-head{
@@ -16,6 +16,11 @@
     font-size: 28px;
     font-weight: 400;
     color:  rgb(193, 110, 110);
+}
+
+.siz{
+    /* font-size:30px; */
+    letter-spacing:2
 }
 
 .book{
@@ -44,5 +49,24 @@
 
 .font1{
     font-family: 'Montserrat', sans-serif;
+    
+}
+
+.bor{
+    width: 5px;
+
+    height: 220px;
+    background-color: #817655;
+    margin-top: -150px;
+    margin-left: 500px;
+    
+}
+
+.texty{
+    text-align: justify;
+    margin-left: 5%;
+    margin-top: 8%;
+    line-height: 30px;
+
     
 }
