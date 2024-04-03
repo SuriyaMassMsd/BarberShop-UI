@@ -1,72 +1,66 @@
-@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Sacramento&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@800;900&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-
-.hov{
-    @apply hover:underline underline-offset-8 decoration-2 decoration-black cursor-pointer hover:text-white;
+.hov {
+  @apply hover:underline underline-offset-8 decoration-2 decoration-black cursor-pointer hover:text-white;
 }
 
-.font-head{
-    font-family: Cinzel, serif;
-    font-size: 28px;
-    font-weight: 400;
-    color:  rgb(193, 110, 110);
+.font-head {
+  font-family: Cinzel, serif;
+  font-size: 28px;
+  font-weight: 400;
+  color: #c16e6e;
 }
 
-.siz{
-    /* font-size:30px; */
-    letter-spacing:2
+.siz {
+  /* font-size:30px; */
+  letter-spacing: 2;
 }
 
-.book{
-    font-family: 'Montserrat', sans-serif;
-    top: 85%;
-    left: 40%;
+.book {
+  font-family: "Montserrat", sans-serif;
+  top: 85%;
+  left: 40%;
 }
 
-.he{
-    position: absolute;
-    top: 65%;
-    font-size: 55px;
-    color:  white;
-    cursor: pointer;
-    font-weight: 700;
-    font-family: 'Montserrat', sans-serif;
-    
+.he {
+  position: absolute;
+  top: 65%;
+  font-size: 55px;
+  color: white;
+  cursor: pointer;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
 }
 
-.color{
-    color: #817655;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-    font-size: 24px;
+.color {
+  color: #817655;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
 }
 
-.font1{
-    font-family: 'Montserrat', sans-serif;
-    
+.font1 {
+  font-family: "Montserrat", sans-serif;
 }
 
-.bor{
-    width: 5px;
+.bor {
+  width: 5px;
 
-    height: 220px;
-    background-color: #817655;
-    margin-top: -150px;
-    margin-left: 500px;
-    
+  height: 220px;
+  background-color: #817655;
+  margin-top: -150px;
+  margin-left: 500px;
 }
 
-.texty{
-    text-align: justify;
-    margin-left: 5%;
-    margin-top: 8%;
-    line-height: 30px;
-
-    
+.texty {
+  text-align: justify;
+  margin-left: 5%;
+  margin-top: 8%;
+  line-height: 30px;
 }
