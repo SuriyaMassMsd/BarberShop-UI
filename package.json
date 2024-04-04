@@ -6,7 +6,9 @@
   "homepage": "https://github.com/SuriyaMassMsd/BarberShop-UI",
   "scripts": {
     "dev": "vite",
-  "build": "vite build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "build": "vite build",
     "preview": "vite preview"
   },
   "devDependencies": {
@@ -14,5 +16,8 @@
     "postcss": "^8.4.31",
     "tailwindcss": "^3.3.3",
     "vite": "^4.5.2"
+  },
+  "dependencies": {
+    "gh-pages": "^6.1.1"
   }
 }

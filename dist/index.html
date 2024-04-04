@@ -4,171 +4,236 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
-    <link rel="icon" href="./BarberShop-UI/assets/Logo-d994bf3d.png" />
+    <link rel="icon" href="/BarberShop-UI/assets/Logo-d994bf3d.png" />
     <title>BarberShop</title>
-    <link rel="stylesheet" href="./BarberShop-UI/assets/index-1a2cfe18.css">
+    <link rel="stylesheet" href="/BarberShop-UI/assets/index-458c5457.css">
   </head>
   <body>
     <!-- navbar -->
-    <section>
-      <div class="bg-black">
-        <span
-          class="p-4 font-head flex justify-center items-center cursor-pointer hover:text-pink-500 text-white"
-          >Prince & Company Salon
-        </span>
-      </div>
-    </section>
-
-    <section class="bg-yellow-400 px-4 py-2">
-      <div class="flex justify-center items-center">
-        <!-- nav_items -->
-        <ul
-          class="text-black font-semibold text-lg uppercase flex justify-center items-center space-x-20"
+    <nav>
+      <section
+        class="flex justify-between sm:justify-center items-center bg-black px-2"
+      >
+        <div class="bg-black">
+          <span
+            class="p-4 font-font2 text-2xl text-[#c16e6e] font-medium flex justify-center items-center cursor-pointer hover:text-pink-500"
+            >Prince & Company Salon
+          </span>
+        </div>
+        <svg
+          id="menu-icon"
+          xmlns="http://www.w3.org/2000/svg"
+          width="32"
+          height="32"
+          viewBox="0 0 24 24"
+          class="text-[#c16e6e] cursor-pointer sm:hidden"
         >
-          <li class="hov hover:scale-125">
-            <a href="/">Home</a>
-          </li>
-          <li class="hov hover:scale-125">
-            <a href="#about">About</a>
-          </li>
-          <li class="hov hover:scale-125">
-            <a href="#barber">OUR BARBERS</a>
-          </li>
-          <li class="hov hover:scale-125">
-            <a href="#our">Services & Products</a>
-          </li>
-          <li class="hov hover:scale-125">
-            <a href="#Contact">Contact</a>
-          </li>
-          <li>
-            <button
-              type="button"
-              class="border bg-pink-500 p-2 rounded hover:bg-black hover:text-white hover:text-lg"
-            >
-              Book a Reservation
-            </button>
-          </li>
-        </ul>
-      </div>
-    </section>
+          <path
+            fill="currentColor"
+            d="M4 18q-.425 0-.712-.288T3 17q0-.425.288-.712T4 16h16q.425 0 .713.288T21 17q0 .425-.288.713T20 18zm0-5q-.425 0-.712-.288T3 12q0-.425.288-.712T4 11h16q.425 0 .713.288T21 12q0 .425-.288.713T20 13zm0-5q-.425 0-.712-.288T3 7q0-.425.288-.712T4 6h16q.425 0 .713.288T21 7q0 .425-.288.713T20 8z"
+          />
+        </svg>
+      </section>
+
+      <section class="sm:bg-yellow-400 sm:px-4 sm:py-2">
+        <!-- nav_items -->
+        <div class="hidden sm:block">
+          <ul
+            class="text-black font-semibold text-lg uppercase flex justify-center items-center space-x-20"
+          >
+            <li class="hov hover:scale-125">
+              <a href="/">Home</a>
+            </li>
+            <li class="hov hover:scale-125">
+              <a href="#about">About</a>
+            </li>
+            <li class="hov hover:scale-125">
+              <a href="#barber">OUR BARBERS</a>
+            </li>
+            <li class="hov hover:scale-125">
+              <a href="#our">Services & Products</a>
+            </li>
+            <li class="hov hover:scale-125">
+              <a href="#Contact">Contact</a>
+            </li>
+            <li>
+              <button
+                type="button"
+                class="border bg-pink-500 p-2 rounded hover:bg-black hover:text-white hover:text-lg"
+              >
+                Book a Reservation
+              </button>
+            </li>
+          </ul>
+        </div>
+        <div
+          id="nav-items"
+          class="bg-yellow-400 z-10 space-y-14 hidden px-4 py-4 w-full h-96 absolute top-0 left-0"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            viewBox="0 0 15 15"
+            class="right-2 absolute cursor-pointer"
+            id="close"
+          >
+            <path
+              fill="currentColor"
+              fill-rule="evenodd"
+              d="M11.782 4.032a.575.575 0 1 0-.813-.814L7.5 6.687L4.032 3.218a.575.575 0 0 0-.814.814L6.687 7.5l-3.469 3.468a.575.575 0 0 0 .814.814L7.5 8.313l3.469 3.469a.575.575 0 0 0 .813-.814L8.313 7.5z"
+              clip-rule="evenodd"
+            />
+          </svg>
+          <ul
+            class="text-black font-semibold text-lg uppercase flex flex-col justify-center items-center space-y-4"
+          >
+            <li class="hov hover:scale-125">
+              <a href="/">Home</a>
+            </li>
+            <li class="hov hover:scale-125">
+              <a href="#about">About</a>
+            </li>
+            <li class="hov hover:scale-125">
+              <a href="#barber">OUR BARBERS</a>
+            </li>
+            <li class="hov hover:scale-125">
+              <a href="#our">Services & Products</a>
+            </li>
+            <li class="hov hover:scale-125">
+              <a href="#Contact">Contact</a>
+            </li>
+            <li>
+              <button
+                type="button"
+                class="border bg-pink-500 p-2 rounded hover:bg-black hover:text-white hover:text-lg"
+              >
+                Book a Reservation
+              </button>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </nav>
 
     <!-- home -->
 
-    <section>
-      <div class="relative">
+    <section class="">
+      <div class="flex justify-center relative">
         <img
           class="w-full max-h-screen object-cover bg-no-repeat bg-contain"
           src="/BarberShop-UI/assets/final-slide-1dfa5c65.jpg"
           alt="homeimages"
         />
-      </div>
 
-      <div class="flex justify-center items-center">
-        <p class="he hover:text-pink-600">IF YOU WANT YOUR LOOK AWESOME</p>
-        <button
-          type="button"
-          class="book bg-black text-white hover:bg-pink-600 hover:text-black hover:border-none px-6 py-3 justify-center items-center border border-white rounded absolute"
+        <div
+          class="flex flex-col space-y-14 absolute top-[50%] justify-center items-center"
         >
-          BOOK ONLINE HERE!
-        </button>
+          <p
+            class="sm:text-[55px] text-xl font-fontHome text-white cursor-pointer font-medium hover:text-pink-600"
+          >
+            IF YOU WANT YOUR LOOK AWESOME
+          </p>
+          <button
+            type="button"
+            class="font-fontHome bg-black text-white hover:bg-pink-600 hover:text-black hover:border-none px-6 py-3 justify-center items-center border border-white rounded"
+          >
+            BOOK ONLINE HERE!
+          </button>
+        </div>
       </div>
     </section>
 
-    <!-- some topics -->
+    <!-- reservations -->
 
     <section>
-      <div class="bg-black w-full h-40 mt-2">
-        <div>
-          <ul class="flex space-x-40">
-            <li
-              class="flex flex-col justify-center items-center ml-20 pt-10 space-y-4"
-            >
-              <div>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="32"
-                  height="32"
-                  class="hover:text-pink-600 cursor-pointer text-white items-center"
-                  viewBox="0 0 512 512"
-                >
-                  <path
-                    fill="currentColor"
-                    d="M256 32C167.67 32 96 96.51 96 176c0 128 160 304 160 304s160-176 160-304c0-79.49-71.67-144-160-144Zm0 224a64 64 0 1 1 64-64a64.07 64.07 0 0 1-64 64Z"
-                  />
-                </svg>
-              </div>
-              <span class="color hover:text-gray-500 cursor-pointer"
-                >FIND A LOCATION</span
-              >
-            </li>
-            <li
-              class="flex flex-col justify-center items-center ml-20 pt-10 space-y-4 space-x-6"
-            >
-              <div>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="32"
-                  height="32"
-                  class="hover:text-pink-600 cursor-pointer text-white items-center"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    fill="currentColor"
-                    d="M8 1v3h8V1h2v3h4v18H2V4h4V1h2ZM4 6v3h16V6H4Zm16 5H4v9h16v-9Z"
-                  />
-                  <path
-                    fill="currentColor"
-                    d="m16.914 13.25l-5.657 5.657l-3.535-3.536l1.414-1.414l2.121 2.121l4.243-4.242l1.414 1.414Z"
-                  />
-                </svg>
-              </div>
+      <div
+        class="bg-black w-full h-auto p-10 sm:h-40 mt-2 space-y-10 sm:space-y-0 sm:flex justify-between"
+      >
+        <div class="flex justify-center items-center flex-col gap-6">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            class="hover:text-pink-600 cursor-pointer text-white items-center"
+            viewBox="0 0 512 512"
+          >
+            <path
+              fill="currentColor"
+              d="M256 32C167.67 32 96 96.51 96 176c0 128 160 304 160 304s160-176 160-304c0-79.49-71.67-144-160-144Zm0 224a64 64 0 1 1 64-64a64.07 64.07 0 0 1-64 64Z"
+            />
+          </svg>
+          <span
+            class="text-[#817655] font-extrabold text-lg hover:text-gray-500 sm:text-2xl cursor-pointer"
+            >FIND A LOCATION</span
+          >
+        </div>
 
-              <span class="color hover:text-gray-500 cursor-pointer uppercase"
-                >Book a Reservation</span
-              >
-            </li>
-            <li
-              class="flex flex-col justify-center items-center ml-20 pt-10 space-y-4"
-            >
-              <div>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="32"
-                  height="32"
-                  class="hover:text-pink-600 cursor-pointer text-white items-center"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    fill="currentColor"
-                    d="M7 15h2c0 1.08 1.37 2 3 2s3-.92 3-2c0-1.1-1.04-1.5-3.24-2.03C9.64 12.44 7 11.78 7 9c0-1.79 1.47-3.31 3.5-3.82V3h3v2.18C15.53 5.69 17 7.21 17 9h-2c0-1.08-1.37-2-3-2s-3 .92-3 2c0 1.1 1.04 1.5 3.24 2.03C14.36 11.56 17 12.22 17 15c0 1.79-1.47 3.31-3.5 3.82V21h-3v-2.18C8.47 18.31 7 16.79 7 15Z"
-                  />
-                </svg>
-              </div>
+        <div class="flex justify-center items-center flex-col gap-6">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            class="hover:text-pink-600 cursor-pointer text-white items-center"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="currentColor"
+              d="M8 1v3h8V1h2v3h4v18H2V4h4V1h2ZM4 6v3h16V6H4Zm16 5H4v9h16v-9Z"
+            />
+            <path
+              fill="currentColor"
+              d="m16.914 13.25l-5.657 5.657l-3.535-3.536l1.414-1.414l2.121 2.121l4.243-4.242l1.414 1.414Z"
+            />
+          </svg>
 
-              <span class="color hover:text-gray-500 cursor-pointer uppercase"
-                >BUY A GIFT CARD</span
-              >
-            </li>
-          </ul>
+          <span
+            class="text-[#817655] font-extrabold text-lg hover:text-gray-500 sm:text-2xl cursor-pointer uppercase"
+            >Book a Reservation</span
+          >
+        </div>
+
+        <div class="flex justify-center items-center flex-col gap-6">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            class="hover:text-pink-600 cursor-pointer text-white items-center"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="currentColor"
+              d="M7 15h2c0 1.08 1.37 2 3 2s3-.92 3-2c0-1.1-1.04-1.5-3.24-2.03C9.64 12.44 7 11.78 7 9c0-1.79 1.47-3.31 3.5-3.82V3h3v2.18C15.53 5.69 17 7.21 17 9h-2c0-1.08-1.37-2-3-2s-3 .92-3 2c0 1.1 1.04 1.5 3.24 2.03C14.36 11.56 17 12.22 17 15c0 1.79-1.47 3.31-3.5 3.82V21h-3v-2.18C8.47 18.31 7 16.79 7 15Z"
+            />
+          </svg>
+          <span
+            class="text-[#817655] font-extrabold text-lg hover:text-gray-500 sm:text-2xl cursor-pointer uppercase"
+            >BUY A GIFT CARD</span
+          >
         </div>
       </div>
     </section>
 
     <!-- cutting style -->
 
-    <section class="p-10" id="about">
-      <div class="flex">
-        <div class="mt-20 py-10">
-          <p
-            class="uppercase font1 ml-36 text-red-600 font-extrabold text-4xl py-2"
-          >
-            authentic &
-          </p>
-          <span
-            class="mt-16 font1 uppercase ml-24 text-red-600 font-font2 font-extrabold text-4xl py-2"
-            >old-fashioned</span
-          >
-          <hr class="bor rounded" />
+    <section class="" id="about">
+      <div class="flex px-10 py-20 flex-col sm:flex-row">
+        <div class="space-y-10 sm:space-y-0 sm:flex sm:flex-row sm:space-x-32">
+          <div class="flex flex-col sapce-y-2 justify-center items-center">
+            <p class="uppercase font1 text-red-600 font-extrabold text-4xl">
+              authentic
+            </p>
+            <span class="uppercase font1 text-red-600 font-extrabold text-4xl"
+              >&</span
+            >
+            <span
+              class="font1 uppercase text-red-600 font-font2 font-extrabold text-4xl"
+              >old-fashioned</span
+            >
+          </div>
+          <hr
+            class="w-full sm:w-[6px] sm:h-full h-[4px] bg-[#817655] rounded"
+          />
         </div>
         <span class="text-sm texty font-semibold"
           >At Prince BarberShop, we bring you nostalgia with a modern twist.
@@ -746,5 +811,6 @@
         </p>
       </div>
     </footer>
+    <script src="./main.js"></script>
   </body>
 </html>
